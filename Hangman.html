@@ -47,9 +47,31 @@
 									<h1>Hangman Game</h1>
 									<p>A solo project that allows the user to play hangman.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img src="images/HangmanGame.jpg" alt="" /></div>
+								<p>
+									The goal of this project was to get familiar with the interactions between local and server side logic and storage of information. We were required to use PHP. 
+									The things that needed to get done with this Hangman game were to have a login system, so that users could have scores associated with their username, the actual Hangman game,
+									that pulls a random word from a database and validates the characters that the user enters for guesses, and a leaderboard to display high scores of users who completed the game.
+								</p>
+								<p>
+									Some of the specifics of this assignment were that the app would need to store the passwords of the user hashed with a salt, and store that result in the database, so that the database doesn't actually have the real password.
+									We also had to make sure the website that it was hosted on gave us a secure connection and supported SSL/TLS.
+									I personally used Inifinty free as the host for the website, as it provided a good database to use with the site and also provided support for SSL/TLS. 
+								</p>
+								<div class="image main"><img src="images/HangmanResults.jpg" alt="" /></div>
+								<p>
+									Since this was more of a solo project for the class, I pretty much did the whole thing myself, with some help and suggestions from my group.
+								</br>
+									One of the hardest things for me to overcome in this project was figuring out how to presistently play the game even though the page reloaded every time the user guessed a letter. 
+									What I had to really utulize was session and the "isset()" function to store everything I needed and to check if those things are already in use or not.
+									My biggest contribution to the group I think was the isset function as that helped my team figure out how to manipulate the session variables.
+								</p>								
+								<div class="image main"><img src="images/HangmanCode.jpg" alt="" /></div>
+								<p>I also really liked figuring out how to properly print out the results page as a table.</p>
+								<div class="image main"><img src="images/HangmanResultsCode.jpg" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="https://github.com/Alex-Bedoya/CS3750HangmanGame" class="button">Check out the Repository</a></li>
+								</ul>
 							</section>
 
 					</div>
