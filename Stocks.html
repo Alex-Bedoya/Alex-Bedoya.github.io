@@ -45,13 +45,46 @@
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
 									<h1>Stock App</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>A group projoect that has a user pick a stock and trade with that stock for about 7 days and see the results after.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+
+								<div class="image main"><img src="images/StockHome.jpg" alt="" /></div>
+
+								<p>
+									The goal of this project was to give a user $10,000 to start with. The user would then pick a stock that they would want to trade with. The user would 
+									then be placed on a random date, and asked if they want to buy, sell, or hold their current stocks. Once the user does one of those, the user would
+									be placed on the next trade day and be prompted the same options. Once the 7 are up the program would sell all the stocks the user owned
+									and show a results page which shows the total loss or gain from those 7 days. 
+								</p>
+
+								<p>
+									Some of the specifics of this project were that we were required to use Ajax methods to prevent redirects and page refreshes to update things on the page. 
+									We were also required to have a data set of all the stocks and their daily prices. We had the options of using an API or just store it in a database, we decided on a database.
+									We were additionally required to have 3 seperate ways to buy or sell the stocks, with one having an interactive graph. We used a text input, scroll bar, and a bar graph. 
+								</p>
+
+								<div class="image main"><img src="images/StockBuy.jpg" alt="" /></div>
+								<div class="image main"><img src="images/StockFinal.jpg" alt="" /></div>
+
+								<p>
+									In this project I spent time working on the actual game logic and making sure there were checks for every buy, sell, and hold throughout the game. 
+									That logic was luckily easy, but using Ajax seemed to give me more difficulty. Because of how Ajax works with Razor pages, the .cs class was not the
+									same instance every time it was called through Ajax. So, I had to utulize the POST methods to store all the necessary data between each day that the user 
+									played. I would pull the data from the POST, do the necessary logic, and send it back with the Ajax returning a json result. The problem is that I needed 
+									to update many things on the page, not just one, so I made a new object, a data package, to send back as a json. 
+								</p>
+
+								<div class="image main"><img src="images/StockCodeAjax.jpg" alt="" /></div>
+								<div class="image main"><img src="images/StockCodeCS.jpg" alt="" /></div>
+
+
+
+
+
+								<ul class="actions special">
+									<li><a href="https://github.com/Alex-Bedoya/PlazmaStockGame" class="button">Check out the Repository</a></li>
+								</ul>
+
 							</section>
 
 					</div>

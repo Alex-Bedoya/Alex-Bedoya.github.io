@@ -45,13 +45,44 @@
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
 									<h1>Grid Word Finder</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>A group project that allows 1 or 2 users to play a word finder game (Boggle) with a 1 minute timer. Which ever player gets more points, wins the game.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+
+								<div class="image main"><img src="images/BoggleMain.jpg" alt="" /></div>
+
+								<p>
+									The goal of this project was to make a word finder game that one or two players can play at the same time and compete. The users would have 60 seconds to find 
+									as many words as they can in a 4x4 grid of random letters. The longer the word that the user finds, the more points they get for that word. They cannot use a single 
+									word twice, and once a user gets a word, the program tells the opposing player that the other player scored x amount of points. Once the 60 seconds is over, a results 
+									page shows to both players, showing all words found and the winner of the game. 
+								</p>
+
+								<p>
+									The main purpose of this project was for the group to get used to using Websockets. We needed to implement asynchronous technology so that the game would 
+									start and end at the same time for both users, while also sending data to each user about when they scored points. We also had to implement a way so that 
+									the program and game would look good on mobile devices. We decided to user Blazor for this project to help impement automatic page updating and websockets.
+								</p>
+
+								<div class="image main"><img src="images/BoggleResults.jpg" alt="" /></div>
+
+								<p>
+									With this project, we were allowed to either use a database full of valid words, or an API. Our group decided to use an API, which I was in charge of. 
+									Since I never used Blazor before and implemented an API, I struggled quite a bit on implementing it, especially so that the game would wait for the verification
+									of the word before giving points.
+								</p>
+
+								<div class="image main"><img src="images/BoggleAPI.jpg" alt="" /></div>
+
+								<p>
+									I also helped with making the interface mobile compatible, which was a simple CSS change depending on the width of the screen.
+								</p>
+
+								<div class="image main"><img src="images/BoggleMobile.jpg" alt="" /></div>
+
+								<ul class="actions special">
+									<li><a href="https://github.com/AdamAguir/PlazmaELGGOB" class="button">Check out the Repository</a></li>
+								</ul>
+							
 							</section>
 
 					</div>

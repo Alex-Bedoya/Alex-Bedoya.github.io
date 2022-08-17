@@ -45,13 +45,46 @@
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
 									<h1>Banking App</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>A group project that allows a user to have a Checking, Savings, and Other account to deposit, withdraw, and transfer money between each account.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+
+								<div class="image main"><img src="images/BankingHome.jpg" alt="" /></div>
+
+								<p>
+									The goal of this project was to get started working on a larger scale project with a team. This Banking app required us to let a user make an account,
+									login to that account, and able to view their bank account. The user then was able to see 3 different sub-accounts inside their main bank account, which were 
+									a Checkings account, Savings Account, and an Other account. The user then would be able to deposit or withdraw money into each account, and was able to transfer
+									money between each sub-account. We were also required to show a full transaction history of an individual sub-account, or a history of all accounts. 
+								</p>
+								<p>
+									Some of the specifics of the assignment were that we were required to use .NET for the server end and use some sort of database to store all the data.
+									We used Razor pages and used Microsoft SQL to store all the data we needed, which was usernames, salts, hashed passwords, account information, and transaction details.
+									The last thing we had to do to help us learn more and get used to being on a team was to use a single code repo so that the entire group shares the same 
+									project, and we decided to use GitHub.
+								</p>
+
+								<div class="image main"><img src="images/BankingTransfer.jpg" alt="" /></div>
+								<div class="image main"><img src="images/BankingHistory.jpg" alt="" /></div>
+
+								<p>
+									To make things easier, we each decided to do a seperate page for the project so that there would be less conflicts with logic and Github commits. </br>
+									I was required to take care of the Transaction history page where it shows the user a history of an individual sub-account or all sub-accounts. 
+									Because we were using Razor pages, it was pretty easy to figure out how to properly print and format a table that shows all the transactions for a particular account.
+								</p>
+
+								<div class="image main"><img src="images/BankingCodeTable.jpg" alt="" /></div>
+
+								<p>
+									One of the main things that I learned from this was how we access the database by using a data access class and call data very similar to using SQL, but not 
+									actually using any SQL. I wrote the two functions to get all transactions for a sub-account or all transactions for the whole account.
+								</p>
+								
+								<div class="image main"><img src="images/BankingCodeData.jpg" alt="" /></div>
+
+								<ul class="actions special">
+									<li><a href="https://github.com/Alex-Bedoya/CS3750BankApp" class="button">Check out the Repository</a></li>
+								</ul>
+
 							</section>
 
 					</div>
