@@ -45,12 +45,27 @@
 									<!-- <span class="date">April 25, 2017</span> -->
 									<h1>Movie Mania</h1>
 									<p>
-										This is an android application that allows users to save, rank, and add movies to lists. This was my final project for my Android class and wanted to take it a step 
-										further and publish it to the Google Play Store. The added challenge to this project was to use something new, which I used Firebase for user accounts
-										and a real-time database storage. I also used an API to get the movie data.
+										As an Android Developer, I created an application that provides users with the functionality to store, rank, 
+										and curate their own movie lists. This project was developed as the culminating assignment of my Android class 
+										and was subsequently published to the Google Play Store.
+									</br>
+										To challenge myself, I chose to incorporate new technologies into this project. 
+										Specifically, I utilized Firebase for user account management and real-time database storage. 
+										Additionally, I integrated a RESTful API to retrieve movie data for the application. Overall, 
+										this project demonstrates my ability to develop and publish functional Android applications that 
+										leverage cutting-edge technologies.
 									</p>
 								</header>
+								<section class="post">
+									<ul class="actions special">
+										<li><a href="https://github.com/Alex-Bedoya/MovieMania" class="button large">Repository</a></li>
+										<li><a href="https://play.google.com/store/apps/details?id=edu.weber.w01344426.moviemania&hl=en_US&gl=US" class="button large">Play Store</a></li>
+									</ul>
+	
+								</section>
 							</section>
+
+							
 
 							<section class="post">
 								<ul class="actions special">
@@ -64,13 +79,17 @@
 								</ul>
 
 								<p>
-									I made this app because I wanted to be able to sort the movies I watch or want to watch. With this application you can curate your own Master List,
-									Want to Watch List, Owned List, and Ranked List. Inside the Want to Watch list, the user is able to click a button to randomly select a movie on that list.
-									While inside the Ranked List, the user will be able to click and drag to reorder the list, or share that list. </br>
-									The user is able to add a new movie to the Master List by clicking the "+" button and searching for that movie. </br>
-									When a user clicks on a movie from the Master List, they will be taken to that movie's details, the details of the movie contain: 
-									Title, release year, rating, runtime, average user score, director, composer, trailer link, overview, some actors, and genres.
-									The movie details also contains things the user can edit, like which lists the movie is in, user notes or comments, and a user rating out of five stars. 
+									In response to a need for organized movie tracking, I developed an Android application that enables users to curate multiple lists of movies, 
+									including a Master List, Want to Watch List, Owned List, and Ranked List.
+									</br></br>
+									The Want to Watch List incorporates a unique feature where users can randomly select a movie from their list with the click of a button. 
+									Meanwhile, the Ranked List enables users to reorder their list through a simple click-and-drag interface or share their list with others.
+									</br></br>
+									To add new movies to the Master List, users can utilize the search functionality accessed through the "+" button. Each movie in the Master 
+									List contains detailed information, such as title, release year, rating, runtime, average user score, director, composer, trailer link, 
+									overview, actors, and genres. Users can also edit movie details, including which lists the movie is in, user notes or comments, and a 
+									user rating out of five stars. Overall, this application showcases my proficiency in Android development and ability to create user-friendly 
+									interfaces.
 								</p>
 							</br>
 								
@@ -78,30 +97,49 @@
 
 								<div class="image main"><img src="images/ManiaGetDirCompCode.jpg" alt="" /></div>
 								<p>
-									One of the hardest parts of this project was using the rest API. The API I was using came from "The Movie Database" where I was able to get all the 
-									movie details in a single call, but parsing through all the data became challenging as there were so many objects. </br>
-									The first image above is how I got the rating for the movie. Since the API call gave me all the possible rating for each of the releases and countries,
-									I had to parse through it to find the one I needed. I looped through them all, looking for all releases in the US that had an actual release date. I then find the 
-									one with an actual "certification" and save that as the rating. </br>
-									The second image shows how I get the Director and Composer for the movie. I had to loop through all the crew list and find the crew memebers who's "job" was listed as 
-									a "Director" or a "Original Music Composer" and save their name. 
+									As a developer on this project, I encountered a challenge in utilizing a RESTful API from "The Movie Database" to retrieve all 
+									necessary movie details. While the API allowed me to retrieve all data in a single call, parsing through the immense amount of 
+									data proved to be difficult.
+								</br></br>
+									One specific example of this was extracting the movie rating, which required parsing through all available ratings for each release 
+									and country. To achieve this, I iterated through each release in the US with an actual release date and identified the one with an 
+									"actual certification" to save as the rating.
+								</br></br>
+									Similarly, extracting the Director and Composer for the movie required looping through the entire crew list to identify individuals 
+									whose "job" was listed as "Director" or "Original Music Composer" and saving their names. These solutions demonstrate my ability to 
+									parse complex data structures and extract necessary information efficiently.
 								</p>
 								</br>
 
 
 								<div class="image main"><img src="images/ManiaMasterListCode.jpg" alt="" /></div>
 								<p>
-									This code above shows how I got the Master List to show using a Firebase Database and recycler view. I first get the database reference that points
-									to the Master List of the current user. I then add a database listener than will call whenever that data changes. When the data changes, it will
-									clear the current movie list and load it with a new one. Once the data is loaded, then I sort it in alphabetical order and display it to the recycler view.
+									In developing this project, I utilized Firebase Database and RecyclerView to create a Master List feature. To achieve this, 
+									I first retrieved the database reference that points to the Master List of the current user.
+								</br></br>
+									Next, I added a database listener that triggers whenever data changes occur, and subsequently clears the current movie list 
+									and loads it with updated data. Once the data is loaded, I then sorted it in alphabetical order and displayed it on the RecyclerView.
+								</br></br>
+									Firebase Database stores data using JSON objects, which greatly simplifies data retrieval and makes it well-suited for scalable 
+									applications. This implementation showcases my proficiency in using Firebase Database and RecyclerView to create dynamic and efficient features.
+								</br></br>
+									Firebase proved to be a valuable tool for this Android application due to its ability to seamlessly integrate user account creation 
+									using email and password authentication. Firebase also handles password saving and security, which eliminated the need for me to implement 
+									these features.
+								</br></br>
+									One of the main advantages of using Firebase was the ability to create a separate dataset for each user, allowing for efficient loading 
+									and retrieval of data specific to each user. Additionally, user data can be saved in their account, making it easily accessible from multiple devices.	
 								</p></br>
 
 
 								<div class="image main"><img src="images/ManiaRankedDragCode1.jpg" alt="" /></div>
 								<p>
-									This last snippet of code above shows how I got the click and drag to work with the Ranked List. I used a ItemTouchHelper which activates when the user
-									clicks, holds, and drags an element on the screen. Once the item has finished moving, the function onMove is called, notifying the collection to reorder
-									as done by the user. I then notify the Ranked List recycler view to change the display how the list was changed. 
+									To enable click-and-drag functionality for the Ranked List feature, I utilized an ItemTouchHelper. This helper is triggered when 
+									the user clicks, holds, and drags an element on the screen.
+								</br></br>
+									Once the item is released, the onMove function is called, which notifies the collection to reorder based on the changes made by 
+									the user. Finally, I notify the Ranked List RecyclerView to update its display to reflect the newly reordered list.
+
 								</p>
 
 							</section>
