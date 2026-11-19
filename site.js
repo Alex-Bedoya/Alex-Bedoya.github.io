@@ -16,6 +16,17 @@ document.querySelectorAll("[data-year]").forEach((year) => {
 const photoGrid = document.querySelector("#photo-grid");
 if (photoGrid) {
   const allowedLayouts = ["tall", "wide", "square"];
+  const photoObserver = "IntersectionObserver" in window
+    ? new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        image.src = image.dataset.src;
+        observer.unobserve(image);
+      });
+    }, { rootMargin: "400px 0px" })
+    : null;
+
   (window.photoGallery || []).forEach((photo, index) => {
     const layout = allowedLayouts.includes(photo.layout) ? photo.layout : "square";
     const tile = makeElement("button", `photo-tile tile-${layout}`);
@@ -23,13 +34,19 @@ if (photoGrid) {
     tile.dataset.photo = photo.src;
     tile.dataset.caption = photo.caption || "";
     const image = makeElement("img");
-    image.src = photo.src;
     image.alt = photo.alt || photo.caption || "Photograph by Alex";
     image.loading = index < 2 ? "eager" : "lazy";
+    image.decoding = "async";
+    if (index < 2 || !photoObserver) {
+      image.src = photo.src;
+    } else {
+      image.dataset.src = photo.src;
+    }
     if (photo.objectPosition) image.style.objectPosition = photo.objectPosition;
     const caption = makeElement("span", "photo-caption", photo.caption || "");
     tile.append(image, caption);
     photoGrid.append(tile);
+    if (photoObserver && index >= 2) photoObserver.observe(image);
   });
 }
 
