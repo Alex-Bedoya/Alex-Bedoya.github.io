@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171624">
+  <meta name="description" content="Selected videos, essays, and links.">
+  <title>The Rabbit Hole — Alex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="journal-data.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body data-page="finds">
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Alex<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="photography.html">Film</a>
+      <a href="snowboarding.html">Snowboarding</a>
+      <a href="biking.html">Biking</a>
+      <a href="books.html">Books</a>
+      <a href="finds.html" aria-current="page">The Rabbit Hole</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap journal-page">
+    <section class="page-heading journal-heading">
+      <!-- <p class="eyebrow">Links</p> -->
+      <h1><span class="serif-accent">The Rabbit Hole</span></h1>
+      <p class="page-lede">Interesting, Philosophical, and thought-provoking videos, articles, etc.</p>
+    </section>
+
+    <section class="journal-entries-section">
+      <div class="collection-intro"><h2>Saved links</h2><p>Selected videos and essays.</p></div>
+      <div class="entry-list" id="find-list"></div>
+      <p class="empty-state" id="find-empty" hidden>No links added yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer page-wrap">
+    <span>Alex</span><span>© <span data-year></span></span>
+  </footer>
+</body>
+</html>

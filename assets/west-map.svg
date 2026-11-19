@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title description">
+  <title id="title">Map of the western United States</title>
+  <desc id="description">A stylized state map of the West, with Idaho, Utah, and Colorado highlighted.</desc>
+  <defs>
+    <linearGradient id="background" x2="0" y2="1">
+      <stop offset="0" stop-color="#29263f"/>
+      <stop offset="1" stop-color="#1b1a2a"/>
+    </linearGradient>
+    <pattern id="terrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#302d47"/>
+      <circle cx="7" cy="7" r="1" fill="#c7b9ff" opacity=".25"/>
+      <circle cx="22" cy="20" r=".8" fill="#ffb6c1" opacity=".22"/>
+    </pattern>
+    <pattern id="highlight-terrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#484262"/>
+      <circle cx="7" cy="7" r="1" fill="#f4d58c" opacity=".45"/>
+      <circle cx="22" cy="20" r=".8" fill="#ffb6c1" opacity=".3"/>
+    </pattern>
+    <g id="western-states" stroke="#77718e" stroke-width="2" stroke-linejoin="round">
+      <path fill="url(#terrain)" d="M93 57H298V151H93Z"/>
+      <path fill="url(#terrain)" d="M93 151H298V247H93Z"/>
+      <path fill="url(#terrain)" d="M74 248H174L182 313L209 367L233 416L255 458L223 477L184 460L149 413L125 365L102 316L84 278Z"/>
+      <path fill="url(#highlight-terrain)" d="M298 57H365L359 105L376 148L357 183L380 221L348 247H298V151Z"/>
+      <path fill="url(#terrain)" d="M365 57H676V151H376L359 105Z"/>
+      <path fill="url(#terrain)" d="M174 248H298L318 355H209L193 314Z"/>
+      <path fill="url(#highlight-terrain)" d="M298 247H398V357H318L298 355Z"/>
+      <path fill="url(#terrain)" d="M398 151H523V247H380L376 221Z"/>
+      <path fill="url(#highlight-terrain)" d="M398 247H523V358H398Z"/>
+      <path fill="url(#terrain)" d="M209 357H318V462H255L233 416Z"/>
+      <path fill="url(#terrain)" d="M398 358H523V468H398Z"/>
+      <path fill="url(#terrain)" d="M523 247H665V358H523Z"/>
+      <path fill="url(#terrain)" d="M523 358H665V468H523Z"/>
+    </g>
+  </defs>
+  <rect width="760" height="520" rx="8" fill="url(#background)"/>
+  <g opacity=".9"><use href="#western-states"/></g>
+  <g fill="#aaa4bd" font-family="Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" text-anchor="middle">
+    <text x="194" y="111">WASHINGTON</text>
+    <text x="194" y="206">OREGON</text>
+    <text x="130" y="353" transform="rotate(-62 130 353)">CALIFORNIA</text>
+    <text x="337" y="168" fill="#f5efd9">IDAHO</text>
+    <text x="514" y="108">MONTANA</text>
+    <text x="247" y="312">NEVADA</text>
+    <text x="350" y="310" fill="#f5efd9">UTAH</text>
+    <text x="450" y="208">WYOMING</text>
+    <text x="460" y="311" fill="#f5efd9">COLORADO</text>
+    <text x="264" y="416">ARIZONA</text>
+    <text x="460" y="416">NEW MEXICO</text>
+    <text x="594" y="308">KANSAS</text>
+    <text x="594" y="419">OKLAHOMA</text>
+  </g>
+  <g fill="#b4aec7" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">
+    <text x="30" y="33">THE WEST</text>
+    <text x="584" y="493">ROCKY MOUNTAIN REGION</text>
+  </g>
+  <path d="M28 488H732" stroke="#b9aaff" opacity=".25"/>
+</svg>

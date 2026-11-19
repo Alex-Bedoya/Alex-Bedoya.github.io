@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A personal recipe notebook.">
+  <title>Recipes — Alex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body data-page="recipes">
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Alex<span class="wordmark-dot">.</span></a>
+    <a class="text-link recipe-home-link" href="index.html">Back to the site <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main class="page-wrap recipes-page">
+    <section class="recipe-heading">
+      <p class="eyebrow">Cooking</p>
+      <h1>Recipes</h1>
+      <p class="page-lede">Recipes to make again. Search by recipe or ingredient.</p>
+      <label class="recipe-search-label" for="recipe-search">Search recipes</label>
+      <input class="recipe-search" id="recipe-search" type="search" placeholder="Search by name or ingredient">
+    </section>
+
+    <section class="recipe-grid" aria-label="Recipe collection">
+      <article class="recipe-card" data-search="lemon pasta garlic parmesan weeknight vegetarian">
+        <div class="recipe-card-top"><span>01</span><span>Weeknight favorite</span></div>
+        <h2>Lemon &amp; garlic pasta</h2>
+        <p class="recipe-description">Lemon, garlic, and Parmesan.</p>
+        <p class="recipe-details">Serves 2 · 20 minutes</p>
+        <details>
+          <summary>Open recipe</summary>
+          <div class="recipe-body">
+            <h3>Ingredients</h3>
+            <ul><li>200 g pasta</li><li>2 cloves garlic, thinly sliced</li><li>1 lemon (zest and juice)</li><li>2 tbsp olive oil</li><li>Parmesan, black pepper, and salt</li></ul>
+            <h3>Method</h3>
+            <ol><li>Cook the pasta in salted water. Save a mug of pasta water before draining.</li><li>Warm the olive oil and garlic gently until fragrant. Stir in lemon zest.</li><li>Toss in the pasta, lemon juice, and a splash of pasta water. Finish with Parmesan and pepper.</li></ol>
+          </div>
+        </details>
+      </article>
+      <article class="recipe-card" data-search="tomato chickpea stew cumin paprika vegetarian">
+        <div class="recipe-card-top"><span>02</span><span>One-pot comfort</span></div>
+        <h2>Tomato chickpea stew</h2>
+        <p class="recipe-description">Chickpeas, tomato, and warm spices.</p>
+        <p class="recipe-details">Serves 4 · 35 minutes</p>
+        <details>
+          <summary>Open recipe</summary>
+          <div class="recipe-body">
+            <h3>Ingredients</h3>
+            <ul><li>1 onion, diced</li><li>2 cans chickpeas, drained</li><li>1 can crushed tomatoes</li><li>1 tsp cumin and 1 tsp smoked paprika</li><li>Olive oil, salt, and a handful of greens</li></ul>
+            <h3>Method</h3>
+            <ol><li>Soften the onion in olive oil. Stir in the spices for 30 seconds.</li><li>Add chickpeas, tomatoes, and a splash of water. Simmer for 25 minutes.</li><li>Fold in the greens until wilted. Season to taste and serve with crusty bread.</li></ol>
+          </div>
+        </details>
+      </article>
+      <article class="recipe-card" data-search="roasted vegetables bowl tahini sweet potato cauliflower">
+        <div class="recipe-card-top"><span>03</span><span>Make-ahead lunch</span></div>
+        <h2>Roasted veg &amp; tahini bowls</h2>
+        <p class="recipe-description">Roasted vegetables with tahini sauce.</p>
+        <p class="recipe-details">Serves 3–4 · 40 minutes</p>
+        <details>
+          <summary>Open recipe</summary>
+          <div class="recipe-body">
+            <h3>Ingredients</h3>
+            <ul><li>1 sweet potato and 1 small cauliflower, chopped</li><li>1 can chickpeas, drained</li><li>2 tbsp olive oil, cumin, salt, and pepper</li><li>3 tbsp tahini and 1 lemon</li><li>Cooked rice or grain, to serve</li></ul>
+            <h3>Method</h3>
+            <ol><li>Heat the oven to 220°C / 425°F. Toss the vegetables and chickpeas with oil and seasoning.</li><li>Roast on a sheet pan for 25–30 minutes, turning once.</li><li>Whisk tahini with lemon juice and enough water to make a pourable sauce. Serve over grains.</li></ol>
+          </div>
+        </details>
+      </article>
+      <article class="recipe-card" data-search="pancakes buttermilk breakfast maple weekend">
+        <div class="recipe-card-top"><span>04</span><span>Slow morning</span></div>
+        <h2>Saturday pancakes</h2>
+        <p class="recipe-description">Buttermilk pancakes.</p>
+        <p class="recipe-details">Makes 8 · 25 minutes</p>
+        <details>
+          <summary>Open recipe</summary>
+          <div class="recipe-body">
+            <h3>Ingredients</h3>
+            <ul><li>1½ cups flour</li><li>1 tbsp sugar, 1 tsp baking powder, ½ tsp baking soda</li><li>1 egg and 1¼ cups buttermilk</li><li>3 tbsp melted butter, plus more for the pan</li><li>Maple syrup and fruit, to serve</li></ul>
+            <h3>Method</h3>
+            <ol><li>Whisk the dry ingredients in a bowl. In another bowl, whisk together egg, buttermilk, and butter.</li><li>Fold wet into dry just until combined; a few lumps are fine.</li><li>Cook small scoops in a buttered pan over medium heat. Flip when bubbles appear. Serve warm.</li></ol>
+          </div>
+        </details>
+      </article>
+    </section>
+    <p class="recipe-disclaimer">Sample recipes—replace before publishing. This page is public.</p>
+  </main>
+
+  <footer class="site-footer page-wrap">
+    <span>Alex</span>
+    <a href="index.html">Back home <span aria-hidden="true">↗</span></a>
+    <span class="footer-year">© <span data-year></span></span>
+  </footer>
+</body>
+</html>
